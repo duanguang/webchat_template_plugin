@@ -1,0 +1,10 @@
+{
+  "publicComponents": {
+    "avatar": "components/avatar/avatar"
+  },
+  "pages": {
+    "list": "pages/list/list",
+    "age": "pages/age/age"
+  },
+  "main": "index.ts"
+}

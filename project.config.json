@@ -1,0 +1,17 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"pluginRoot": "plugin/",
+	"compileType": "plugin",
+	"appid": "wx2d6457c9c650261d",
+	"projectname": "webchat_template_plugin",
+  "description": "webchat_template_plugin",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	}
+}

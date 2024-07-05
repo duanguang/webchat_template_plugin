@@ -1,0 +1,13 @@
+diff --git a/node_modules/@tarojs/webpack5-runner/dist/plugins/MiniPlugin.js b/node_modules/@tarojs/webpack5-runner/dist/plugins/MiniPlugin.js
+index c5a2cec..25d0d3d 100644
+--- a/node_modules/@tarojs/webpack5-runner/dist/plugins/MiniPlugin.js
++++ b/node_modules/@tarojs/webpack5-runner/dist/plugins/MiniPlugin.js
+@@ -1102,7 +1102,7 @@ class TaroMiniPlugin {
+                     this.generateTemplateFile(compilation, compiler, page.path, template.buildPageTemplate, importBaseTemplatePath, config);
+                 }
+                 if (config) {
+-                    const importBaseCompPath = (0, helper_1.promoteRelativePath)(path_1.default.relative(page.path, path_1.default.join(sourceDir, this.getTargetFilePath(baseCompName, ''))));
++                    const importBaseCompPath = (0, helper_1.promoteRelativePath)(path_1.default.relative(page.path, path_1.default.join(sourceDir,isBuildPlugin?'plugin':'', this.getTargetFilePath(baseCompName, ''))));
+                     const importCustomWrapperPath = (0, helper_1.promoteRelativePath)(path_1.default.relative(page.path, path_1.default.join(sourceDir, this.getTargetFilePath(customWrapperName, ''))));
+                     config.content.usingComponents = Object.assign({}, config.content.usingComponents);
+                     if (isUsingCustomWrapper) {
