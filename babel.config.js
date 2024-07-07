@@ -6,5 +6,26 @@ module.exports = {
       framework: 'react',
       ts: true
     }]
+  ],
+  plugins: [
+    [
+      "import",
+      {
+        "libraryName": "@nutui/nutui-react-taro",
+        "libraryDirectory": "dist/esm",
+        "style": 'css',
+        "camel2DashComponentName": false
+      },
+      'nutui-react-taro'
+    ],
+    [
+      'import',
+      {
+          libraryName: 'ahooks',
+        camel2DashComponentName: false, // 是否需要驼峰转短线
+        camel2UnderlineComponentName: false, // 是否需要驼峰转下划线
+      },
+      'ahooks'
+    ],
   ]
 }

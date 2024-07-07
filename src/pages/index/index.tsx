@@ -23,7 +23,7 @@ export default class Index extends Component<PropsWithChildren> {
       <View className='index'>
         <Text>Hello world!</Text>
         {/* <avatar /> */}
-        <Navigator url='plugin://myPlugin/list'>
+        <Navigator url='plugin://myPlugin/age'>
           Go to pages/age!
         </Navigator>
       </View>

@@ -9,8 +9,8 @@ const config = {
     '828': 1.81 / 2
   },
   sourceRoot: 'src',
-  outputRoot: 'dist',
-  plugins: [],
+  outputRoot: 'miniprogram',
+  plugins: ['@tarojs/plugin-html',],
   copy: {
     patterns: [
     ],
@@ -39,7 +39,7 @@ const config = {
       pxtransform: {
         enable: true,
         config: {
-
+          selectorBlackList: ['nut-']
         }
       },
       url: {
@@ -56,14 +56,17 @@ const config = {
         }
       }
     },
-    webpackChain(chain,webpack) {
-      console.log(chain.compilation,'webpackwebpackwebpack')
-    },
   },
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
     postcss: {
+      pxtransform: {
+        enable: true,
+        config: {
+          selectorBlackList: ['nut-']
+        }
+      },
       autoprefixer: {
         enable: true,
         config: {
