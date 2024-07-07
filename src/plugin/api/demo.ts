@@ -1,4 +1,3 @@
-import { get } from "../fetch";
 import { gatewayRequest } from "./request";
 export class DemoApi {
     /**获取工单进度表 */
